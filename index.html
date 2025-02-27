@@ -41,6 +41,7 @@
             </div>
         </div>
     </nav> 
+
     <div class="container mt-5 pt-5">
         <section id="home" class="py-5 text-center home-section">
             <div class="d-flex justify-content-center">
@@ -50,13 +51,28 @@
                 Selamat datang di <span class="text-primary">Geprek Maskuy!</span> Nikmati ayam geprek terbaik dengan berbagai level pedas.
             </p>
         </section>
+
         <div class="container-sm px-5">
-            
+
             <section id="about" class="mt-5 mx-5 py-5 px-5 about-section">
-                <br>
+
                 <p class="justify-text text-center fs-6">Di Geprek Maskuy, kami percaya bahwa ayam geprek bukan hanya sekadar makanan, tetapi juga pengalaman. Didirikan dengan cinta dan semangat untuk menyajikan hidangan yang lezat dan memuaskan, Geprek Maskuy hadir sebagai tempat di mana rasa pedas bertemu dengan kelezatan yang tak terlupakan. 
                 Kami memulai perjalanan ini dengan tujuan sederhana: menyajikan ayam geprek terbaik dengan bahan-bahan segar dan berkualitas. Setiap potong ayam kami digoreng dengan sempurna, renyah di luar dan lembut di dalam, kemudian digeprek dengan sambal pilihan yang menggugah selera. Dari sambal bawang klasik hingga sambal matah yang segar, kami memiliki sesuatu untuk setiap pecinta pedas. Kami juga berkomitmen untuk selalu berinovasi dan menghadirkan varian ayam geprek yang unik dan menarik. Kami terus bereksperimen dengan berbagai bumbu dan sambal untuk memberikan pengalaman kuliner yang berbeda setiap kali Anda berkunjung.</p>
-                
+
+                <div class="mt-5 pb-5 px-5 review review-section">
+                    <h2 class="justify-text text-center fs-6 pb-3 pt-3 ">REVIEW ORANG ORANG</h2>
+    
+                        <div class="review-item">
+                           <a href="https://maps.app.goo.gl/5qPge7YKFNvd9Rg79"> 
+                            <img src="review.png" alt="Review dari Sifa Nadaa Adzahra (Naz)" class="img-fluid">
+                           </a>
+                        </div>
+                        <div class="review-item">
+                           <a href="https://maps.app.goo.gl/Fq84wQpU2cFRgyJQ6"> 
+                            <img src="review2.png" alt="Review dari Nama Pengguna Lain" class="img-fluid">
+                           </a> 
+                        </div>
+                </div>
             </section>
         
             <section id="menu" class="py-5 px-5 menu-section">
@@ -80,9 +96,10 @@
             <section id="maps" class="py-5 px-5">
                 <h2>Maps</h2>
                 <p>Temukan lokasi kami di peta berikut:</p>
-                <iframe src="https://g.co/kgs/UCkUmja" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3981.2313000032777!2d102.2765341!3d-3.759761!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e36b16bff7c6267%3A0x2eeb4776acc8889d!2sAYAM%20GEPREK%20MAS%20KUUY!5e0!3m2!1sen!2sid!4v1740659345782!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </section>
         </div>
+        
         <div class="content-wrapper">
             <section id="contact" class="py-5 px-5">
                 <h2>Contact</h2>
@@ -137,7 +154,7 @@
     $(window).scroll(function() {
         let scrollDistance = $(window).scrollTop();
         $("section").each(function(i) {
-            if ($(this).position().top - 150 <= scrollDistance) {
+            if ($(this).position().top - 200 <= scrollDistance) {
                 $(".navbar-nav .nav-link").removeClass("active");
                 $(".navbar-nav .nav-link").eq(i).addClass("active");
             }
